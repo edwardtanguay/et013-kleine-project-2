@@ -1,0 +1,66 @@
+:root{
+    --main-color:#d4326b;
+    background-color: antiquewhite;
+}
+@font-face {
+    font-family:fasthand;
+    src: url(./font-fasthand/Fasthand-Regular.ttf);
+}
+
+body{
+font-family: fasthand;
+line-height: 1.3rem;
+min-height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+
+
+}
+.avatar{
+    width: 50vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-size: cover;
+}
+.open, .close-btn{
+    border: none;
+    font-size: 2rem;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10rem;
+    color: white;
+    background-color: var(--main-color);
+    
+    
+}
+.modal-container{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events:none;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+
+   
+
+}
+.document{
+    width: 50vh;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.close-btn{
+    margin-left: 90vh;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: visible;
+}
